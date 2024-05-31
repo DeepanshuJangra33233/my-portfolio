@@ -18,8 +18,8 @@ module.exports = {
         "box-shadow": "10px 10px 19px #1c1e22, -10px -10px 19px #262a2e",
       },
       colors: {
-        primary: "#ff054b",
-        secondary: "#77797d",
+        primary: "#ff014f",
+        secondary: "#c4cfde",
       },
     },
   },
