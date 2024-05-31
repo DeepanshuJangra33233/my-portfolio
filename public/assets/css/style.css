@@ -1,0 +1,120 @@
+/* style.css */
+.custom-cursor-container {
+  cursor: url("/bone.png"), auto;
+}
+
+@keyframes floatAnimation {
+  0%,
+  100% {
+    transform: translateY(15px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.circle.red {
+  background-color: #ff3b47;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.circle.yellow {
+  background-color: #ffc100;
+  position: absolute;
+  top: 15px;
+  left: 30px;
+}
+
+.circle.green {
+  background-color: #27c93f;
+  position: absolute;
+  top: 15px;
+  left: 45px;
+}
+
+.glassBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  backdrop-filter: blur(5px);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.circle.red,
+.circle.yellow,
+.circle.green {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.85;
+}
+
+.front {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+}
+
+.middle {
+  width: 150px;
+  height: 150px;
+  background-color: rgba(255, 165, 0, 0.7);
+  box-shadow: 0 0 8px 2px rgba(255, 165, 0, 0.5);
+}
+
+.back {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(255, 140, 0, 0.6);
+  box-shadow: 0 0 15px 5px rgba(255, 140, 0, 0.5);
+}
+
+.glass {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.glassText {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px;
+  font-family: "Pixelify Sans", sans-serif;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000, 2px 2px 2px rgba(0, 0, 0, 0.3);
+  animation: floatAnimation 3s ease-in-out infinite;
+}
