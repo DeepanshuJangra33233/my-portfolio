@@ -1,5 +1,5 @@
 import React from "react";
-import { Fackbook, Instagram, Twitter } from "../common/Icons";
+import { Fackbook, Instagram, Linkedin, Twitter } from "../common/Icons";
 
 const Profile = () => {
   return (
@@ -10,17 +10,22 @@ const Profile = () => {
           <p>Frontend Dev</p>
         </div>
         <div className=" flex gap-[10px]">
-          <div className="rounded-[10px] bg-card-gradient shadow-box-shadow p-[20px] w-[39%]">
+          <div className="rounded-[10px] bg-card-gradient shadow-box-shadow p-[20px] w-[39%] cursor-pointer">
             <Fackbook />
           </div>
-          <div className="rounded-[10px] bg-card-gradient shadow-box-shadow p-[20px] w-[39%]">
+          <div className="rounded-[10px] bg-card-gradient shadow-box-shadow p-[20px] w-[39%] cursor-pointer">
             <Instagram />
           </div>
-          <div className="rounded-[10px] bg-card-gradient shadow-box-shadow p-[20px] w-[39%]">
+          <div className="rounded-[10px] bg-card-gradient shadow-box-shadow p-[20px] w-[39%] cursor-pointer">
             <Twitter />
           </div>
-          <div className="rounded-[10px] bg-card-gradient shadow-box-shadow p-[20px] w-[39%]">
-            <Fackbook />
+          <div className="rounded-[10px] bg-card-gradient shadow-box-shadow p-[20px] w-[39%] cursor-pointer">
+            <Linkedin />
+          </div>
+        </div>
+        <div>
+          <div>
+            <div></div>
           </div>
         </div>
       </div>
