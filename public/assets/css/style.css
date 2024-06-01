@@ -1,9 +1,9 @@
-/* .tab_parent_hover svg path {
+.download_button svg path {
   transition: 0.3s ease all;
 }
-.tab_parent_hover:hover svg path {
+.download_button:hover svg path {
   fill: #ff014f !important;
-} */
+}
 
 .tab_parent svg {
   height: 28px;
