@@ -9,3 +9,7 @@
   height: 28px;
   width: 28px;
 }
+.active_icon svg path {
+  fill: white;
+  /* stroke: white; */
+}
