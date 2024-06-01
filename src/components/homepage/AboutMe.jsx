@@ -3,16 +3,17 @@ import React from "react";
 const AboutMe = () => {
   return (
     <div>
-      <p>
-        Hello there! My name is Deepanshu Jangra, and I hail from the historic
-        city of Hisar, located in the vibrant state of Haryana, India. With a
-        robust experience of three fantastic years in the realm of web
-        development, my professional journey has been nothing short of
+      <p className="text-secondary font-semibold text-base">
+        Hello there! My name is{" "}
+        <span className="text-primary">Deepanshu Jangra</span>, and I hail from
+        the historic city of Hisar, located in the vibrant state of Haryana,
+        India. With a robust experience of three fantastic years in the realm of
+        web development, my professional journey has been nothing short of
         exhilarating. My passion lies in the art of crafting websites and
         applications that are not only user-friendly but also serve as the
         digital embodiment of creativity and innovation.
       </p>
-      <p>
+      <p className="text-secondary font-semibold text-base mt-3">
         I take pride in my ability to translate complex ideas into seamless
         online experiences, ensuring that each project I undertake is infused
         with simplicity and elegance. My ultimate goal is to create digital
@@ -22,7 +23,7 @@ const AboutMe = () => {
         creative touch, I am always eager to dive into new challenges and bring
         those novel concepts to fruition.
       </p>
-      <p>
+      <p className="text-secondary font-semibold text-base mt-3">
         From the vibrant and crowded streets of Hisar, with its cacophony of
         sounds and a kaleidoscope of colors, to the sprawling and intricate
         digital highways of the web, my professional and personal odyssey as a
@@ -31,7 +32,7 @@ const AboutMe = () => {
         sparkles within me and a profound passion for all things technology.
         It&apos;s this combination that spurs me on every day.
       </p>
-      <p>
+      <p className="text-secondary font-semibold text-base mt-3">
         Over the course of the past three years, I&apos;ve not only embarked on
         a transformative journey but have also meticulously sharpened and
         polished my technical skills. The foundational languages of the web -
@@ -39,7 +40,7 @@ const AboutMe = () => {
         into designs through style; and JavaScript, the scripting language that
         introduces interactivity - these have become my tools of trade.
       </p>
-      <p>
+      <p className="text-secondary font-semibold text-base mt-3">
         But I didn&apos;t stop there. Recognizing the importance of modern
         frameworks in building dynamic and responsive user interfaces, I dove
         headfirst into mastering several of the leading ones. React, with its
@@ -48,14 +49,14 @@ const AboutMe = () => {
         interest with its server-side rendering capabilities, which
         significantly improve performance and enhance SEO.
       </p>
-      <p>
+      <p className="text-secondary font-semibold text-base mt-3">
         Moreover, Vue.js introduced me to an intuitive and model-driven
         framework that facilitates building interactive web interfaces with
         ease. Its simplicity and gentle learning curve made it a joy to work
         with. And with Nuxt.js, I explored new horizons in universal application
         development, crafting applications that are both fast and flexible.
       </p>
-      <p>
+      <p className="text-secondary font-semibold text-base mt-3">
         This relentless pursuit of knowledge and growth in the realm of
         front-end development constantly motivates me to explore new trends,
         adapt to best practices, and develop solutions that not only meet but
@@ -63,8 +64,8 @@ const AboutMe = () => {
         committed to delivering excellence and pushing the boundaries of
         what&apos;s possible on the web.
       </p>
-      <h4>What I Do</h4>
-      <p>
+      <h4 className="text-primary font-semibold text-xl mt-5">What I Do</h4>
+      <p className="text-secondary font-semibold text-base mt-3">
         Responsive Web Design: With a strong commitment to responsive design
         principles, I craft and meticulously fine-tune websites to ensure they
         provide an optimal viewing experience—easy reading and navigation with a
@@ -74,7 +75,7 @@ const AboutMe = () => {
         seamlessly to the user&apos;s device, providing a fluid and cohesive
         experience no matter the screen size.
       </p>
-      <p>
+      <p className="text-secondary font-semibold text-base mt-3">
         UI/UX Design: Firmly believing that a website&apos;s success hinges on
         how users feel about it, my focus on user interface (UI) and user
         experience (UX) design is relentless. I strive for more than just good
@@ -84,7 +85,7 @@ const AboutMe = () => {
         overall flow and usability of the site, thus delivering satisfying and
         memorable interactions.
       </p>
-      <p>
+      <p className="text-secondary font-semibold text-base mt-3">
         Web Performance Optimization: Recognizing that website performance is
         integral to retaining users and improving engagement, I dedicate
         significant effort to optimizing every aspect of the websites I work on.
@@ -95,8 +96,10 @@ const AboutMe = () => {
         enjoyable user experience which, in turn, can lead to better conversion
         rates and customer satisfaction.
       </p>
-      <h5>Collaborative Development:</h5>
-      <p>
+      <h5 className="text-primary font-semibold text-lg mt-4">
+        Collaborative Development:
+      </h5>
+      <p className="text-secondary font-semibold text-base mt-3">
         Enjoyment and productivity go hand-in-hand in collaborative
         environments, which is why I thrive when working alongside other
         professionals. By actively engaging with designers to understand their
@@ -105,7 +108,31 @@ const AboutMe = () => {
         stakeholders, my role in collaborative development is characterized by
         enthusiasm and a spirit of partnership.
       </p>
-      <h4>Why Choose Me?</h4>
+      <h4 className="text-primary font-semibold text-xl mt-5">
+        Why Choose Me?
+      </h4>
+      <p className="text-secondary font-semibold text-base mt-3">
+        Opting for my expertise signifies joining forces with a professional who
+        transcends the role of a mere developer. I am an innovator at heart, a
+        creative problem solver who passionately dedicates time and energy to
+        perfecting my craft. With me, you gain someone who is deeply committed
+        to excellence in every facet of the work.
+      </p>
+      <p className="text-secondary font-semibold text-base mt-3">
+        I don&apos;t merely keep pace with technological advancements; I
+        proactively seek to stay several steps ahead in this ever-evolving
+        industry. By continuously updating my skills and knowledge, I ensure
+        that I can offer you state-of-the-art solutions and cutting-edge
+        strategies that position you at the forefront of innovation.
+      </p>
+      <p className="text-secondary font-semibold text-base mt-3">
+        My dedication to continual learning means that when you choose to work
+        with me, you’re choosing a partnership that will be as enduring as it is
+        productive. You&apos;ll find that my commitment to staying ahead
+        isn&apos;t just a professional promise—it&apos;s a personal mantra that
+        drives me to achieve remarkable results for all my clients.fast-evolving
+        field, ensuring that I bring the latest and greatest to your projects.
+      </p>
     </div>
   );
 };
