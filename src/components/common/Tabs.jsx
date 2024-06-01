@@ -41,7 +41,7 @@ const Tabs = ({ setActiveTab, activeTab }) => {
             {obj.icon}
           </span>
           <p
-            className={`text-lg font-medium pt-1 duration-300 ${
+            className={`text-base font-medium pt-1 duration-300 capitalize ${
               activeTab === obj.title ? "text-white" : "text-secondary"
             }`}
           >
