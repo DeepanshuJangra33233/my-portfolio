@@ -17,6 +17,8 @@ module.exports = {
       },
       boxShadow: {
         "box-shadow": "10px 10px 19px #1c1e22, -10px -10px 19px #262a2e",
+        "input-shadow":
+          "1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset",
       },
       colors: {
         primary: "#ff014f",
