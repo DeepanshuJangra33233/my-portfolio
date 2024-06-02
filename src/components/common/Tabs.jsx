@@ -20,12 +20,12 @@ const Tabs = ({ setActiveTab, activeTab }) => {
   }, [searchParams, setActiveTab]);
 
   return (
-    <div className="rounded-[10px] bg-card-gradient shadow-box-shadow p-5 fixed lg:static flex flex-row lg:flex-col max-w-[500px] lg:max-w-full left-1/2 -translate-x-1/2 lg:translate-x-0 w-full lg:w-auto bottom-0 justify-between lg:justify-start">
+    <div className="rounded-[10px] bg-card-gradient shadow-box-shadow p-5 fixed lg:h-full lg:static flex flex-row lg:flex-col max-w-[500px] lg:max-w-full left-1/2 -translate-x-1/2 lg:translate-x-0 w-full lg:w-auto bottom-0 justify-between lg:justify-start">
       {tabList.map((obj, index) => (
         <div
           key={index}
           onClick={() => setTabActiveHandler(obj.title)}
-          className={`rounded-md duration-300 tab_parent hover:shadow-box-shadow p-4 flex items-center flex-col cursor-pointer w-[93px] ${
+          className={`rounded-md duration-300 tab_parent hover:shadow-box-shadow p-4 flex items-center flex-col cursor-pointer w-[80px] sm:w-[93px] ${
             index !== 0 && "lg:mt-4"
           } ${
             activeTab === obj.title
@@ -41,7 +41,7 @@ const Tabs = ({ setActiveTab, activeTab }) => {
             {obj.icon}
           </span>
           <p
-            className={`text-base font-medium pt-1 duration-300 capitalize ${
+            className={`text-sm sm:text-base font-medium pt-1 duration-300 capitalize ${
               activeTab === obj.title ? "text-white" : "text-secondary"
             }`}
           >

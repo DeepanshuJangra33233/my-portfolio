@@ -41,7 +41,7 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center py-10">
-      <div className="flex container gap-10 2xl:max-w-[1440px] px-3 mx-auto justify-between flex-col lg:flex-row">
+      <div className="flex container gap-5 xl:gap-10 2xl:max-w-[1440px] px-3 mx-auto justify-between flex-col lg:flex-row">
         <Profile />
         <ContentBody title={activeTab} content={content} />
         <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />

@@ -12,6 +12,15 @@ import {
 import Image from "next/image";
 
 const Profile = () => {
+  // CV ODF DOWNLOADER
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/cv/DeepanshuJangra.pdf";
+    link.download = "DeepanshuJangra.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <>
       <div className="pt-16">
@@ -59,7 +68,7 @@ const Profile = () => {
               <Linkedin />
             </a>
           </div>
-          <div className="mt-[32px] rounded-[10px] bg-card-gradient shadow-box-shadow p-5">
+          <div className="mt-[32px] rounded-[10px] bg-card-gradient shadow-box-shadow p-4 sm:p-5">
             <a
               href="tel:+91 9992549904"
               className=" flex text-center items-center gap-5 group"
@@ -83,7 +92,7 @@ const Profile = () => {
               </div>
               <div>
                 <p className="text-[13px] text-start ">Email</p>
-                <p className="group-hover:text-primary duration-300 max-w-[210px] truncate">
+                <p className="group-hover:text-primary duration-300 max-w-[195px] sm:max-w-[210px] truncate">
                   deepanshujangra33233@gmail.com
                 </p>
               </div>
@@ -98,8 +107,11 @@ const Profile = () => {
               </div>
             </div>
           </div>
-          <div className=" flex justify-center mt-[30px]">
-            <button className="text-white mt-3 mb-3 download_button rounded-[10px] bg-card-gradient group flex items-center gap-3 justify-center shadow-box-shadow p-5 text-center">
+          <div className=" flex justify-center mt-3 sm:mt-[30px]">
+            <button
+              onClick={handleDownload}
+              className="text-white mt-3 mb-3 download_button rounded-[10px] bg-card-gradient group flex items-center gap-3 justify-center shadow-box-shadow p-5 text-center"
+            >
               <Download />
               <span className="text-secondary font-medium group-hover:text-primary duration-300">
                 Download Cv
