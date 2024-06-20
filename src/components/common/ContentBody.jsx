@@ -8,7 +8,7 @@ const ContentBody = ({ title, content }) => {
           <h3 className="font-bold text-xl uppercase text-white">{title}</h3>
           <span className="w-[200px] h-[2px] bg-primary"></span>
         </div>
-        <div className="mt-5 pe-2 sm:pe-3 xl:pe-0">{content}</div>
+        <div className="mt-5">{content}</div>
       </div>
     </div>
   );

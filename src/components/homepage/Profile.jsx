@@ -2,7 +2,7 @@ import React from "react";
 import {
   Download,
   Email,
-  Facebook,
+  GitHub,
   Instagram,
   Linkedin,
   Location,
@@ -29,7 +29,7 @@ const Profile = () => {
             className="rounded-full -top-[10%] left-1/2 -translate-x-1/2 absolute pointer-events-none"
             width={150}
             height={150}
-            src="/assets/images/deepanshu.jpeg"
+            src="/assets/images/team/deepanshu.jpeg"
             alt="profile"
           />
           <h2 className="text-[#ff014f] text-center text-2xl font-bold pt-16">
@@ -40,11 +40,11 @@ const Profile = () => {
           </div>
           <div className=" flex gap-[10px] mt-5 justify-center">
             <a
-              href="https://www.facebook.com/deepanshu.jangra.1447"
+              href="https://github.com/DeepanshuJangra33233"
               target="_blank"
               className="rounded-[10px] bg-card-gradient shadow-box-shadow p-[20px] flex items-center justify-center cursor-pointer size-[62px] hover:translate-y-[-3px] duration-300 hover:bg-card-gradient-translate"
             >
-              <Facebook />
+              <GitHub />
             </a>
             <a
               href="https://www.instagram.com/developer_deepanshu/"

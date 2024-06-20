@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <div>
+    <div className="pr-3">
       <p className="text-secondary font-semibold text-base">
         Hello there! My name is{" "}
         <span className="text-primary">Deepanshu Jangra</span>, and I hail from
