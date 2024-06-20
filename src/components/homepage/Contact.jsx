@@ -1,9 +1,11 @@
 "use client";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { PinkArrow } from "../common/Icons";
 import Swal from "sweetalert2";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const formRef = useRef();
   const [userSubmitDetail, setUserSubmitDetail] = useState({
     name: "",
     phone: "",
@@ -22,23 +24,36 @@ const Contact = () => {
 
   const onFormSubmit = (e) => {
     e.preventDefault();
-    setUserSubmitDetail({
-      name: "",
-      phone: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
-    Swal.fire({
-      title: "Thankyou",
-      text: "Will be connect soon",
-      icon: "success",
-    });
+    emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_USER_ID); // PUBLIC KEY
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        formRef.current
+      )
+      .then(() => {
+        Swal.fire({
+          title: "Thank you",
+          text: "Will connect soon",
+          icon: "success",
+        });
+        setUserSubmitDetail({
+          name: "",
+          phone: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+      })
+      .catch((error) => {
+        console.log("error:--", error);
+        alert("error");
+      });
   };
 
   return (
     <>
-      <form onSubmit={onFormSubmit}>
+      <form ref={formRef} onSubmit={onFormSubmit}>
         <div className="flex items-center lg:pr-4 flex-col sm:flex-row">
           <div className="flex flex-col w-full sm:w-1/2 lg:pr-2 xl:pr-4">
             <label
