@@ -47,7 +47,11 @@ const Contact = () => {
       })
       .catch((error) => {
         console.log("error:--", error);
-        alert("error");
+        Swal.fire({
+          title: "Oops...",
+          text: "Something went wrong!",
+          icon: "error",
+        });
       });
   };
 

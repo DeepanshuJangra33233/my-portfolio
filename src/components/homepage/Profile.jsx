@@ -103,7 +103,9 @@ const Profile = () => {
               </div>
               <div>
                 <p className="text-[13px] text-start">Location</p>
-                <p className="group-hover:text-primary duration-300">Hisar</p>
+                <p className="group-hover:text-primary duration-300">
+                  Hisar, Haryana
+                </p>
               </div>
             </div>
           </div>
