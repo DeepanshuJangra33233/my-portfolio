@@ -4,7 +4,7 @@ import { Contact, Profile, Skill, Team } from "./Icons";
 export const tabList = [
   { icon: <Profile />, title: "about" },
   { icon: <Skill />, title: "skill" },
-  { icon: <Team />, title: "team" },
+  // { icon: <Team />, title: "team" },
   { icon: <Contact />, title: "contact" },
 ];
 
@@ -68,17 +68,17 @@ export const TeamMembers = [
     linkedin:
       "https://www.linkedin.com/in/aashish-sheoran-2039ba305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
-  // {
-  //   profile: "/assets/images/team/tanisha.jpg",
-  //   name: "Tanisha",
-  //   profession: "Front End Developer",
-  //   gitHub: "",
-  //   instagram:
-  //     "https://www.instagram.com/its_tanishka_mavi?igsh=cjJ0bWxtczBneGxv&utm_source=qr",
-  //   twitter: "",
-  //   linkedin:
-  //     "https://www.linkedin.com/in/tanishka-mavi-b47b14255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-  // },
+  {
+    profile: "/assets/images/team/tanisha.jpg",
+    name: "Tanisha",
+    profession: "Front End Developer",
+    gitHub: "",
+    instagram:
+      "https://www.instagram.com/its_tanishka_mavi?igsh=cjJ0bWxtczBneGxv&utm_source=qr",
+    twitter: "",
+    linkedin:
+      "https://www.linkedin.com/in/tanishka-mavi-b47b14255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+  },
   {
     profile: "/assets/images/team/yatharth.jpg",
     name: "Yatharth Jain",

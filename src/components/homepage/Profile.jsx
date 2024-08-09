@@ -34,6 +34,7 @@ const Profile = () => {
           />
           <h2 className="text-[#ff014f] text-center text-2xl font-bold pt-16">
             Deepanshu
+            {/* Tanisha */}
           </h2>
           <div className="rounded-[10px] bg-card-gradient shadow-box-shadow p-5 text-center mt-6 max-w-[330px] mx-auto">
             <p className="text-lg font-bold">Frontend Dev</p>
